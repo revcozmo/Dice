@@ -54,3 +54,7 @@ a, a:visited, a:active, a:hover, a:focus {
  cursor:pointer;
  color:#97abef;
 }
+
+.navbar-inverse.dropdown-menu a {
+ color:#e7e7e7;
+}
