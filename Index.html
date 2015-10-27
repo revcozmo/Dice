@@ -36,48 +36,66 @@
     </nav>
   </div>
 
-  <div class-"container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-sm-6">
 
       </div>
-      <div class="col-xs-6">
-
-        <ul class="nav nav-tabs nav-justified">
-          <li class="tab-item allan" id="historytab">
-            <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#historytab,#historypane').addClass('active');">
-              <span class="glyphicon glyphicon-list-alt"></span> &nbsp;Recent
-            </a>
-          </li>
-          <li class="tab-item allan" id="statstab">
-            <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#statstab,#statspane').addClass('active');">
-              <span class="glyphicon glyphicon-stats"></span> &nbsp;Statistics
-            </a>
-          </li>
-          <li class="tab-item allan active" id="fairtab">
-            <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#fairtab,#fairpane').addClass('active');">
-              <span class="glyphicon glyphicon-eye-open"></span> &nbsp;Fair
-            </a>
-          </li>
-          <li class="tab-item allan" id="bottab">
-            <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#bottab,#botpane').addClass('active');">
-              <span class="glyphicon glyphicon-flash"></span> &nbsp;M4RT-N
-            </a>
-          </li>
-          <li class="tab-item allan" id="chattab">
-            <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#chattab,#chatpane').addClass('active');$('#chatnotify').hide();$('#chat-content').scrollTop(9999);$('#chat-input').focus();">
-              <span class="glyphicon glyphicon-bullhorn"></span> &nbsp;Chat
-              <span class="badge" id="chatnotify" style="display: none;">!</span>
-            </a>
-          </li>
-        </ul>
-
+      <div class="col-sm-6">
+        <div class="row" style="display: block;">
+          <ul class="nav nav-tabs nav-justified">
+            <li class="tab-item allan active" id="historytab">
+              <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#historytab,#historypane').addClass('active');">
+                <span class="glyphicon glyphicon-list-alt"></span> &nbsp;Recent
+              </a>
+            </li>
+            <li class="tab-item allan" id="statstab">
+              <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#statstab,#statspane').addClass('active');">
+                <span class="glyphicon glyphicon-stats"></span> &nbsp;Statistics
+              </a>
+            </li>
+            <li class="tab-item allan" id="fairtab">
+              <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#fairtab,#fairpane').addClass('active');">
+                <span class="glyphicon glyphicon-eye-open"></span> &nbsp;Fair
+              </a>
+            </li>
+            <li class="tab-item allan" id="bottab">
+              <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#bottab,#botpane').addClass('active');">
+                <span class="glyphicon glyphicon-flash"></span> &nbsp;M4RT-N
+              </a>
+            </li>
+            <li class="tab-item allan" id="chattab">
+              <a onclick="$('.tab-item,.tab-pane').removeClass('active');$('#chattab,#chatpane').addClass('active');$('#chatnotify').hide();$('#chat-content').scrollTop(9999);$('#chat-input').focus();">
+                <span class="glyphicon glyphicon-bullhorn"></span> &nbsp;Chat
+                <span class="badge" id="chatnotify" style="display: none;">!</span>
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="historypane">
+              <table class="betlog">
+                <tbody><tr id="logheading"><th>Color</th><th>Amount</th><th>Mult</th><th>Payout</th><th>Verified</th></tr><tr>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
+                </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="app.js"></script>
-  <script src="http//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> 
 </body>

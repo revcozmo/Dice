@@ -1,7 +1,51 @@
 body {
 	background-color: #0b1b0f;
+	color: #e7e7e7;
+}
+
+table.betlog {
+ text-align:center;
+ border-style:none;
+ margin:0 auto;
+ width:80%;
+}
+
+table.betlog:nth_child(odd) {
+ background-color: #0f1f14;
+}
+
+table.betlog:nth_child(even) {
+ background-color: #07170b;
+}
+
+table.betlog td, table.betlog th {
+ padding: 0 4px;
+}
+
+table.betlog tr {
+ border-width: 0 0 1px 0;
+ border-color: #e7e7e7;
+ border-style: solid;
+}
+
+table.betlog th {
+ text-align:center;
+ font-family:'Allan',Helvetica,Arial,sans-serif;
+ font-size:larger;
 }
 
 .allan {
 	font-family:'Allan',Helvetica,Arial,sans-serif;
+}
+
+.tab-item {
+ cursor:pointer;
+}
+
+.tab-item>a, .tab-pane>a {
+ color:#e7e7e7;
+}
+
+.tab-item>a:hover {
+ color:black;
 }
