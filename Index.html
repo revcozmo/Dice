@@ -5,6 +5,34 @@
 
 <body>
   <div>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header dropdown">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#topbar">
+            <span class="glyphicon glyphicon-user"></span>
+          </button>
+          <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" style="font-family: 'Allan';">LuckyBit Micro <span class="caret"></span></a>
+          <ul class="dropdown-menu navbar-inverse">
+            <li><a href="http://luckyb.it/">LuckyBit</a></li>
+            <li><a id="derby">LuckyBit Derby</a></li>
+            <li><a id="mplink">MoneyPot page</a></li>
+          </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="topbar">
+          <ul class="nav navbar-nav" id="controls" style="display: block;">
+            <li><a onclick="$('#helpmodal').modal('show');"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+            <li><a id="faucetlink"><span class="glyphicon glyphicon-gift" id="faucetbutton"></span></a></li>
+            <li><a id="depositbutton"><span class="glyphicon glyphicon-download"></span></a></li>
+            <li><a id="withdrawbutton"><span class="glyphicon glyphicon-upload"></span></a></li>
+            <li><a id="mutelink"><span class="glyphicon glyphicon-volume-off" id="mute"></span></a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="logout"><span id="uname"></span> &nbsp;
+            <span class="glyphicon glyphicon-off"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
   <script src="app.js"></script>
   <script src="http//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js"></script>
