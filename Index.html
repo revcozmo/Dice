@@ -25,7 +25,6 @@
             <li><a id="faucetlink"><span class="glyphicon glyphicon-gift" id="faucetbutton"></span></a></li>
             <li><a id="depositbutton"><span class="glyphicon glyphicon-download"></span></a></li>
             <li><a id="withdrawbutton"><span class="glyphicon glyphicon-upload"></span></a></li>
-            <li><a id="mutelink"><span class="glyphicon glyphicon-volume-off" id="mute"></span></a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a id="logout"><span id="uname"></span> &nbsp;
@@ -74,7 +73,7 @@
           <div class="tab-content">
             <div class="tab-pane active" id="historypane">
               <table class="betlog">
-                <tbody><tr id="logheading"><th>Color</th><th>Amount</th><th>Mult</th><th>Payout</th><th>Verified</th></tr><tr>
+                <tbody><tr id="logheading"><th>Bet</th><th>Payout</th><th>Game</th><th>Roll</th><th>Profit</th></tr><tr>
                 </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
                 </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
                 </tr><tr><td></td><td></td><td>&nbsp;</td><td></td><td></td>
@@ -89,6 +88,53 @@
               </table>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" role="dialog" id="helpmodal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content" style="color:black;">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">LuckyBit Micro - Help</h4>
+        </div>
+        <div class="modal-body">
+          <h5>Controls</h5>
+          <p>
+            <span class="glyphicon glyphicon-question-sign"></span> &nbsp; Bring up this help screen<br>
+            <span class="glyphicon glyphicon-gift"></span> &nbsp; Claim 2 bits from the MoneyPot faucet<br>
+            <span class="glyphicon glyphicon-download"></span> &nbsp; <span class="glyphicon glyphicon-upload"></span> &nbsp; Deposit/Withdraw bitcoin to LuckyBit Micro<br>
+            <span class="glyphicon glyphicon-exclamation-sign"></span> &nbsp; Play LuckyBit Derby<br>
+            <span class="glyphicon glyphicon-off"></span> &nbsp; Log out of LuckyBit Micro<br>
+            <span class="glyphicon glyphicon-volume-off"></span> &nbsp; Toggle game sounds<br>
+            <span class="glyphicon glyphicon-random"></span> &nbsp; <span class="glyphicon glyphicon-pushpin"></span> &nbsp; Toggle random client seeds<br>
+            <span class="glyphicon glyphicon-refresh"></span> &nbsp; Randomize the client seed immediately<br>
+            <span class="glyphicon glyphicon-ban-circle"></span> &nbsp; Stop the bet rain<br>
+            <span class="glyphicon glyphicon-step-forward"></span> &nbsp; <span class="glyphicon glyphicon-fast-forward"></span> &nbsp; Toggle M4RT-N's fast rain option
+          </p>
+          <h5>Rain Bets</h5>
+          <p>Enter a number of bets and amount before you click the color to rain on. The rain counter will display how many bets are left. Bets will automatically stop if your balance is less than a bet. If you don't want to rain, just rain 1 (default).</p>
+          <p>For strategic rains, use M4RT-N the gambit bot. Tell it what you'd like to do if the coin lands in each slot; you can choose to do nothing, multiply your wager by a number, or set your wager to the base. M4RT-N knows the outcome of your coin before it falls, so if you use fast rain mode be ready for the consequences! Setting a good limit is <b>always</b> important. Play with care!</p>
+          <h5>Min/Max bet</h5>
+          <p>The minimum you can wager is 100 satoshi (1 bit) on any line. The maximum you can wager is determined by potential profit, which is currently limited to 5 bitcoins (5,000,000 bits) on any wager.</p>
+          <h5>Odds</h5>
+          <p>The odds are calculated using standard probability distribution. This type of game and calculation is fully explained in the Odds section of the Menu on <a target="_blank" style="color:blue;" href="http://www.luckyb.it">LuckyBit</a>; this version uses 8 rows instead of 16 and so has five different probability ranges instead of nine. The chances of hitting each slot are exactly:</p>
+          <ul>
+            <li>Fringe: <b>2:256</b>=0.78125%</li>
+            <li>1 away: <b>16:256</b>=6.25%</li>
+            <li>2 away: <b>56:256</b>=21.875%</li>
+            <li>3 away: <b>112:256</b>=43.75%</li>     
+            <li>Center: <b>70:256</b>=27.34375%</li>
+          </ul>
+          <p>The numbers for each line are selected so that the house edge is exactly 0.78125%.</p>
+          <hr>
+          <h5>History/Credits</h5>
+          <p>LuckyBit Micro was created as a community effort to replicate the LuckyBit experience in a smaller, more mobile-friendly form. Most of the code is done by <b>stingleword</b>, with contributions from <b>Gm</b> and ideas from many members of the community.</p>
+          <p>All the nifty icons used on this page are part of the <a href="http://glyphicons.com" target="blank" style="color:blue;">Glyphicons</a> provided with Bootstrap. Big thanks to Jan Kovařík for providing these great resources to the public!</p>
+          <h5>Donations/Tips</h5>
+          <p>Don't donate to me, play the game instead - or play the original!</p>
         </div>
       </div>
     </div>

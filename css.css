@@ -49,3 +49,8 @@ table.betlog th {
 .tab-item>a:hover {
  color:black;
 }
+
+a, a:visited, a:active, a:hover, a:focus {
+ cursor:pointer;
+ color:#97abef;
+}
